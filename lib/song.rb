@@ -17,6 +17,7 @@ class Song
   
   def count
     return @@count
+    binding.pry
   end
   
   
