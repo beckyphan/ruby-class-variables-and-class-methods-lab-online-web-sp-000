@@ -15,7 +15,9 @@ class Song
     @@artists << artist
   end 
   
-  
+  def count
+    return @@count
+  end
   
   
 end
