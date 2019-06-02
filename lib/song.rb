@@ -15,21 +15,7 @@ class Song
     @@artists << artist
   end 
   
-  def genres 
-    genres = []
-    @@genres.each do |genre|
-      if genres.include?(genre)
-        return
-      else
-        genres << genre 
-      end
-    end
-    genres
-  end 
   
-  def count
-    @@count
-  end
   
   
 end
