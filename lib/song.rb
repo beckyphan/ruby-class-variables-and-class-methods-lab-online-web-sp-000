@@ -14,7 +14,6 @@ class Song
     @@genres << genre
     @@artists << artist
   end 
-
   
   def genres 
     genres = []
@@ -32,40 +31,5 @@ class Song
     @@count
   end
   
-  def artists
-    artists = []
-    @@artists.each do |artist|
-      if artists.include?(artist)
-        
-      else 
-        artists << artists
-      end
-    end
-    artists
-  end 
-  
-  def genre_count
-    genres = {}
-    @@genres.each do |genre|
-      if genres.include?(genre)
-        genres[genre] += 1
-      else
-        genres[genre] = 1
-      end
-    end
-    genres
-  end 
-  
-    def artist_count
-    artists = {}
-    @@artists.each do |artist|
-      if artists.include?(artist)
-        artists[artist] += 1
-      else
-        artists[artist] = 1
-      end
-    end
-    artists
-  end 
   
 end
