@@ -16,7 +16,19 @@ class Song
   end 
   
   def self.count
-    return @@count
+    @@count
+  end
+  
+  def self.artists
+    artists = []
+    @@artists.each do |artist|
+      if artists.include?(artist)
+        nil 
+      else 
+        artists << artist 
+      end
+    end
+    artists
   end
   
   
